@@ -1,0 +1,13 @@
+apiVersion: build.openshift.io/v1 
+kind: BuildConfig 
+metadata: 
+  name: mi-aplicacion-php 
+spec: 
+  source: 
+    binary: {} 
+  strategy: 
+    dockerStrategy: {} 
+  output: 
+    to: 
+      kind: ImageStreamTag 
+      name: mi-aplicacion-php:latest 
